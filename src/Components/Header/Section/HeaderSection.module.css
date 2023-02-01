@@ -1,0 +1,90 @@
+.section{
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    flex:1;
+}
+
+.sectionContent{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: auto;
+    gap: 20px;
+    line-height: 50px;
+    
+}
+.sectionContent h1{
+    max-width: 70%;
+    word-break: break-word;
+}
+.sectionContent p{
+    max-width: 85%;
+    line-height: normal;
+    opacity: 0.8;
+}
+.sectionContent button{
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: palevioletred;
+    
+}
+.imgContainer{
+    min-width: 300px;
+    max-width: 50%;
+}
+.sectionImg{
+width: 100%;   
+}
+
+@media(max-width: 768px){
+    .section{
+        flex-direction: column;
+    }
+
+    .sectionContent{
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .imgContainer{
+        max-width: 100%;
+        margin: 0;
+        margin-top: 70px;
+    }
+
+    .sectionContent button{
+        width: 250px;
+    }
+
+    .sectionContent h1{
+        text-align: center;
+    }
+    .sectionContent p{
+        line-height: normal;
+        opacity: 0.8;
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px) and (min-width:375px){
+    .section{
+        font-size: 14px;
+    }
+
+    .sectionContent{
+        line-height: 35px;
+    }
+
+    .imgContainer{
+        margin: 0;
+        margin-top: 50px;
+    }
+}
